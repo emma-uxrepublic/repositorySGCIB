@@ -1,0 +1,127 @@
+@import '../../bower_components/lesshat/build/lesshat.less';
+
+/* === APP VARIABLES  =============================================================== */
+
+@import '../variables/colors.less';
+@import '../variables/typography.less';
+
+.sg-search-holder
+{
+    @import 'typeahead_with_search.less';
+    .input-group
+    {
+        width: 100%;
+        input[type=text]
+        {
+            .font-lighter();
+
+            width: 100%;
+            height: 50px;
+            padding: 0 20px;
+
+            border: none;
+            .border-radius(0 0 0 0);
+        }
+        span.input-group-btn .btn
+        {
+            width: 80px;
+            height: 50px;
+            padding: 0 12px;
+
+            border: 0;
+            .border-radius(0 0 0 0);
+            background: #333;
+        }
+        .sg-search-filter-holder
+        {
+
+            min-width: 310px;
+            margin-top: 15px;
+
+            border: 1px solid #4b4b4b;
+            .sg-search-filter-header
+            {
+                position: relative;
+
+                padding: 15px;
+
+                color: #fff;
+                background-color: #333;
+                .font-lighter();
+                text-transform: uppercase;
+                .arrow
+                {
+                    position: absolute;
+                    top: -10px;
+                    left: 15px;
+
+                    display: block;
+
+                    width: 17px;
+                    height: 10px;
+
+                    background-color: transparent;
+                    background-image: url('/images/icons/arrow-top.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+            ul.sg-search-filter-menu
+            {
+                margin: 0;
+                padding: 0;
+
+                list-style: none;
+                li.sg-search-in-filter
+                {
+                    padding: 10px;
+
+                    border-bottom: 1px solid #ebebeb;
+
+                    background-color: transparent;
+                    background-image: url('/images/icons/dark-chevron-left-s.png');
+                    background-repeat: no-repeat;
+                    background-position: 95% center;
+
+                    a.sg-search-in-filter-trigger{
+                        display: block;
+                        color: #333333;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .sg-tt-section{
+            display: block;
+            width: 100%;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333333;
+            small{
+                display: block;
+                width: 100px;
+                font-style: italic;
+                font-weight: lighter;
+            }
+        }
+
+    }
+    .input-group-btn:first-child > .btn
+    {
+        width: 50px;
+        height: 50px;
+        padding: 4px 12px;
+
+        border-right: 0;
+        background-color: #2c2c2c;
+        background-image: url('/images/icons/white-search-filter.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

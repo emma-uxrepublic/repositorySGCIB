@@ -1,0 +1,18 @@
+{
+  "name": "sgFramework",
+  "version": "0.0.0",
+  "dependencies": {
+    "modernizr": "2.8.x",
+    "jquery": "1.x.x",
+    "bootstrap": "3.2.x",
+    "lesshat": "~3.0.2",
+    "iCheck": "~1.0.2",
+    "Selecter": "~3.2.2"
+  },
+  "devDependencies": {},
+  "resolutions": {
+    "angular": "1.2.x",
+    "modernizr": "2.8.x",
+    "jquery": "1.x.x"
+  }
+}

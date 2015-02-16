@@ -1,0 +1,131 @@
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+
+@sg-font-family-sans-serif:  'Helvetica Neue', Arial, sans-serif;
+@sg-font-family-sans-serif-lighter:  'Helvetica Neue Light', Arial, sans-serif;
+@sg-font-family-sans-serif-bolder:  'Helvetica Neue Bold', Arial, sans-serif;
+
+
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+@font-family-sans-serif:  @sg-font-family-sans-serif;
+@font-family-serif:       @sg-font-family-sans-serif;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;
+
+@font-size-base:          14px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+
+@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:        1.428571429; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    inherit;
+@headings-font-weight:    500;
+@headings-line-height:    1.1;
+@headings-color:          inherit;
+
+
+//
+// Variables
+// --------------------------------------------------
+
+
+
+.font-lighter(){
+	font-family: @sg-font-family-sans-serif-lighter;
+	font-weight: 100;
+}
+.font-bolder(){
+	font-family: @sg-font-family-sans-serif-bolder;
+	font-weight: 900;
+}
+
+
+
+body
+{
+    font-family: @sg-font-family-sans-serif;
+    font-size: 14px;
+
+    color: @gray-dark;
+    background: @gray-pale;    
+}
+
+a
+{
+    color: @sg-color-action;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-weight: lighter;
+
+    margin-left: 20px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+h1
+{
+    font-size: 20px;
+}
+h2
+{
+    font-size: 18px;
+}
+h3
+{
+    font-size: 16px;
+}
+h4
+{
+    font-size: 14px;
+}
+h5
+{
+    font-size: 12px;
+}
+h6
+{
+    font-size: 10px;
+}
+
+span.sg-bold-up
+{
+    font-weight: bold;
+
+    text-transform: uppercase; 
+
+    color: @gray-dark;
+}
+span.sg-green-text
+{
+    font-weight: bold;
+
+    color: @green;
+}
+b
+{
+    font-weight: normal;
+}

@@ -1,0 +1,981 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>sg flux</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <!-- build:css({.tmp,app}) styles/vendor.css -->
+  <link rel="stylesheet" href="styles/vendor.css">
+
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/Selecter/jquery.fs.selecter.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css({.tmp,app}) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/doc.css">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/modernizr.js -->
+  <script src="bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+<body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+      <header>
+          <img src="images/logos/logoBlank.png" alt="sg-logo" width="250">
+          <h1 class="pull-right">FLUX</h1>
+      </header> 
+
+      <div class="container documents">
+        <!-- Color Swatches
+        ================================================== -->
+        <div class="example">
+          <table class="sg-section-table" width="100%">
+              <tbody>
+                  <tr>
+                      <td><h3 class="sg-section-1">Color Swatches</h3></td>
+                      <td width="100%"><div class="sg-red-line"></div></td>
+                  </tr>
+              </tbody>
+          </table>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix swatches-content">
+                    <div class="pull-left swatche gray" style="background-color:#FAFAFA"></div>
+                    <div class="pull-left swatche gray" style="background-color:#F7F7F7"></div>
+                    <div class="pull-left swatche gray" style="background-color:#EEEEEE"></div>
+                    <div class="pull-left swatche gray" style="background-color:#CCCCCC"></div>
+                    <div class="pull-left swatche gray" style="background-color:#999999"></div>
+                    <div class="pull-left swatche gray" style="background-color:#333333"></div>
+                    <div class="pull-left swatche gray" style="background-color:#2b2F3e"></div>  
+                  </div>
+                  <div class="infos">
+                    <h4>GRAY</h4>
+                    <p>#FAFAFA, #F7F7F7, #EEEEEE, #CCCCCC, #999999, #333333, #2b2F3E</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix swatches-content">
+                    <div class="pull-left swatche blue" style="background-color:#d8eff7"></div>
+                    <div class="pull-left swatche blue" style="background-color:#25b5e4"></div>
+                    <div class="pull-left swatche blue" style="background-color:#009bcd"></div>
+                    <div class="pull-left swatche blue" style="background-color:#3952a9"></div>
+                  </div>
+                  <div class="infos">
+                    <h4>BLUE</h4>
+                    <p> #d8eff7, #25b5e4, #009bcd, #3952a9</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix swatches-content">
+                    <div class="pull-left swatche red" style="background-color:#ffdce3"></div>
+                    <div class="pull-left swatche red" style="background-color:#d71236"></div>
+                  </div>
+                  <div class="infos">
+                    <h4>RED</h4>
+                    <p> #FFDCE3, #D71236</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix swatches-content">
+                    <div class="pull-left swatche green" style="background-color:#20ef79"></div>
+                    <div class="pull-left swatche green" style="background-color:#06c759"></div>
+                    <div class="pull-left swatche green" style="background-color:#0dbe00"></div>
+                  </div>
+                  <div class="infos">
+                    <h4>GREEN</h4>
+                    <p> #20Ef79, #06C759, #0DBE00</p>
+                  </div>
+                </div>
+              </div>
+            </div>              
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix swatches-content">
+                    <div class="pull-left swatche yellow" style="background-color:#FFE400"></div> 
+                  </div>
+                  <div class="infos">
+                    <h4>YELLOW</h4>
+                    <p>#FFE400</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix swatches-content">
+                    <div class="pull-left swatche orange" style="background-color:#FF9000"></div> 
+                  </div>
+                  <div class="infos">
+                    <h4>ORANGE</h4>
+                    <p>#FF9000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix swatches-content">
+                    <div class="pull-left swatche gray" style="background-color:#e53f52"></div>
+                    <div class="pull-left swatche gray" style="background-color:#b52737"></div>
+                    <div class="pull-left swatche gray" style="background-color:#81223c"></div>
+                    <div class="pull-left swatche gray" style="background-color:#480819"></div>
+                    
+                  </div>
+                  <div class="infos">
+                    <h4>NAV</h4>
+                    <p>#E53f52, #B52737, #81223C, #480819</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>    
+        </div>
+
+        <!-- Typography
+        ================================================== -->
+        <div class="example">
+          <table class="sg-section-table" width="100%">
+              <tbody>
+                  <tr>
+                      <td><h3 class="sg-section-1">Typography</h3></td>
+                      <td width="100%"><div class="sg-red-line"></div></td>
+                  </tr>
+              </tbody>
+          </table>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="example-typography">
+                <h1><span class="heading-note">Header 1</span>Showers across the W</h1>
+              </div>
+              <div class="example-typography">
+                <h1><span class="heading-note">Header 1</span>Showers across the W</h1>
+              </div>
+              <div class="example-typography">
+                <h2><span class="heading-note">Header 2</span>Give this quartet a few</h2>
+              </div>
+              <div class="example-typography">
+                <h3><span class="heading-note">Header 3</span>The Vatican transitions to a</h3>
+              </div>
+              <div class="example-typography">
+                <h4><span class="heading-note">Header 4</span>Great American Bites: Telluride's Oak, The</h4>
+              </div>
+              <div class="example-typography">
+                <h5><span class="heading-note">Header 5</span>Author Diane Alberts loves her some good</h5>
+              </div>
+              <div class="example-typography">
+                <h6><span class="heading-note">Header 6</span>With the success of young-adult book-to-movie</h6>
+              </div>
+              <div class="example-typography">
+                <span class="text-note">Paragraph</span>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. <strong>Donec ullamcorper</strong> nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+              </div>
+
+              <div class="example-typography">
+                <span class="text-note">Lead Text</span>
+                <p class="lead">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+              </div>
+              <div class="example-typography">
+                <span class="text-note">Quote</span>
+                <blockquote>
+                  <p>Design is not just what it looks like and feels like. Design is how it works.</p>
+                  <small>Steve Jobs, CEO Apple</small>
+                </blockquote>
+              </div>
+              <div class="example-typography">
+                <span class="text-note">Small Font</span>
+                <p><small>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Forms
+        ================================================== -->
+        <div class="example">
+          <div class="row">
+            <div class="col-md-12">
+              <table class="sg-section-table" width="100%">
+                  <tbody>
+                      <tr>
+                          <td><h3 class="sg-section-1">Forms</h3></td>
+                          <td width="100%"><div class="sg-red-line"></div></td>
+                      </tr>
+                  </tbody>
+              </table>
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Text input">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" disabled placeholder="Text input">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">$</span>
+                        <input type="text" class="form-control">
+                        <span class="input-group-addon">.00</span>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="input-group">
+                        <div class="input-group-btn">
+                          <button type="button" class="btn btn-danger" tabindex="-1">Action</button>
+                          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <input type="text" class="form-control">
+                        <div class="input-group-btn">
+                          <button type="button" class="btn btn-primary" tabindex="-1">Action</button>
+                          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group has-success has-feedback">
+                    <label class="control-label" for="inputSuccess2">Input with success</label>
+                    <input type="text" class="form-control" id="inputSuccess2">
+                    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group has-warning has-feedback">
+                    <label class="control-label" for="inputWarning2">Input with warning</label>
+                    <input type="text" class="form-control" id="inputWarning2">
+                    <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group has-error has-feedback">
+                    <label class="control-label" for="inputError2">Input with error</label>
+                    <input type="text" class="form-control" id="inputError2">
+                    <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="sg-search-holder">
+                    <div class="input-group sg-second-typeahead">
+                      <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle sg-search-filter-trigger" data-toggle="dropdown">
+                        </button>
+                        <div id="dropdown" class="dropdown-menu sg-search-filter-holder">
+                          <header class="sg-search-filter-header"> 
+                            Advance Search
+                            <div class="arrow"></div>
+                          </header>
+                          <ul class="sg-search-filter-menu">
+                            <li class="sg-search-in-filter">
+                              <a href="" class="sg-search-in-filter-trigger">Criteria 0</a>
+                            </li>
+                            <li class="sg-search-in-filter sg-alt-filter">
+                            <a href="" class="sg-search-in-filter-trigger">Criteria 1</a>
+                            </li>
+                            <li class="sg-search-in-filter">
+                            <a href="" class="sg-search-in-filter-trigger">Criteria 2</a>
+                            </li>
+                            <li class="sg-search-in-filter sg-alt-filter">
+                            <a href="" class="sg-search-in-filter-trigger">Criteria 3</a>
+                            </li>
+                          </ul>               
+                        </div>
+                      </div>
+                      <div id="" class="sg-typeahead">
+                        <input class="typeahead" type="text" placeholder="Start typing">
+                      </div>
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" id="sg-filter-bar-btn" type="button">
+                          <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                      </span>
+                    </div>                      
+                  </div>
+
+                </div>
+                <div class="col-md-6">
+                  
+                </div>
+              </div>                
+            </div>
+          </div>
+        </div>
+
+        <!-- Checkboxes and Radios
+        ================================================== -->
+        <div class="example">
+          <table class="sg-section-table" width="100%">
+              <tbody>
+                  <tr>
+                      <td><h3 class="sg-section-1">Checkboxes and Radios</h3></td>
+                      <td width="100%"><div class="sg-red-line"></div></td>
+                  </tr>
+              </tbody>
+          </table>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="checkbox">
+                    <input type="checkbox" id="flat-checkbox-1">
+                    <label for="flat-checkbox-1">default</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="checkbox">
+                    <input type="checkbox" id="flat-checkbox-2" checked>
+                    <label for="flat-checkbox-2">checked</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="checkbox">
+                    <input type="checkbox" id="flat-checkbox-3" disabled>
+                    <label for="flat-checkbox-3">disabled</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="checkbox">
+                    <input type="checkbox" id="flat-checkbox-4" checked disabled>
+                    <label for="flat-checkbox-4">checked & disabled</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="radio">
+                    <input type="radio" id="flat-radio-1">
+                    <label for="flat-radio-1">default</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="radio">
+                    <input type="radio" id="flat-radio-2" checked>
+                    <label for="flat-radio-2">checked</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="radio">
+                    <input type="radio" id="flat-radio-3" disabled>
+                    <label for="flat-radio-3">disabled</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="radio">
+                    <input type="radio" id="flat-radio-4" checked disabled>
+                    <label for="flat-radio-4">checked & disabled</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>     
+
+        <!-- Selecter
+        ================================================== -->
+        <div class="example">
+          <table class="sg-section-table" width="100%">
+              <tbody>
+                  <tr>
+                      <td><h3 class="sg-section-1">Selecter</h3></td>
+                      <td width="100%"><div class="sg-red-line"></div></td>
+                  </tr>
+              </tbody>
+          </table>
+          <div class="row">
+            <div class="col-md-3">
+             <select name="selecter_basic" class="selecter_1">
+                <optgroup label="Group One">
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </optgroup>
+                <optgroup label="Group One">
+                  <option value="4">Four</option>
+                  <option value="5">Five</option>
+                  <option value="6">Six</option>
+                  <option value="7">Seven</option>
+                </optgroup>
+                <optgroup label="Group Three">
+                  <option value="8">Eight</option>
+                  <option value="9">Nine</option>
+                  <option value="10">Ten</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <select name="selecter_basic" class="selecter_2" data-selecter-options='{"label":"Jump Sites","external":"true"}'>
+                <option value="http://google.com">Google Search</option>
+                <option value="http://boingboing.com">BoingBoing</option>
+                <option value="http://cnn.com">CNN News</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <select name="selecter_basic" class="selecter_3"  data-selecter-options='{"cover":"true"}'>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <select name="selecter_basic" class="selecter_4" disabled="disabled">
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Buttons
+        ================================================== -->
+        <div class="example">
+          <table class="sg-section-table" width="100%">
+              <tbody>
+                  <tr>
+                      <td><h3 class="sg-section-1">Buttons</h3></td>
+                      <td width="100%"><div class="sg-red-line"></div></td>
+                  </tr>
+              </tbody>
+          </table>
+          <div class="row">
+            <div class="col-md-3">
+              <button type="button" class="btn btn-block">Normal</button>
+            </div>
+            <div class="col-md-3">
+              <button type="button" class="btn btn-default btn-block">Default</button>
+            </div>
+            <div class="col-md-3">
+              <button type="button" class="btn btn-primary btn-block">Primary</button>
+            </div>
+            <div class="col-md-3">
+              <button type="button" class="btn btn-success btn-block">Success</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <button type="button" class="btn btn-info btn-block">Info</button>
+            </div>
+            <div class="col-md-3">
+              <button type="button" class="btn btn-warning btn-block">Warning</button>
+            </div>
+            <div class="col-md-3">
+              <button type="button" class="btn btn-danger btn-block">Danger</button>
+            </div>
+            <div class="col-md-3">
+              <button type="button" class="btn btn-link btn-block">Link</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button Groups
+        ================================================== -->
+        <div class="example">
+          <table class="sg-section-table" width="100%">
+              <tbody>
+                  <tr>
+                      <td><h3 class="sg-section-1">Button Groups</h3></td>
+                      <td width="100%"><div class="sg-red-line"></div></td>
+                  </tr>
+              </tbody>
+          </table>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="btn-group">
+                    <button type="button" class="btn"><i class="glyphicon glyphicon-align-left"></i></button>
+                    <button type="button" class="btn"><i class="glyphicon glyphicon-align-center"></i></button>
+                    <button type="button" class="btn"><i class="glyphicon glyphicon-align-right"></i></button>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-align-left"></i></button>
+                    <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-align-center"></i></button>
+                    <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-align-right"></i></button>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-align-left"></i></button>
+                    <button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-align-center"></i></button>
+                    <button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-align-right"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-align-left"></i></button>
+                    <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-align-center"></i></button>
+                    <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-align-right"></i></button>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-align-left"></i></button>
+                    <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-align-center"></i></button>
+                    <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-align-right"></i></button>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-warning"><i class="glyphicon glyphicon-align-left"></i></button>
+                    <button type="button" class="btn btn-warning"><i class="glyphicon glyphicon-align-center"></i></button>
+                    <button type="button" class="btn btn-warning"><i class="glyphicon glyphicon-align-right"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-align-left"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-align-center"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-align-right"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="btn-group-vertical">
+                    <button type="button" class="btn btn"><i class="glyphicon glyphicon-home"></i></button>
+                    <button type="button" class="btn btn"><i class="glyphicon glyphicon-user"></i></button>
+                    <button type="button" class="btn btn"><i class="glyphicon glyphicon-comment"></i></button>
+                    <button type="button" class="btn btn"><i class="glyphicon glyphicon-cog"></i></button>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="btn-group-vertical">
+                    <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-home"></i></button>
+                    <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-user"></i></button>
+                    <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-comment"></i></button>
+                    <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-cog"></i></button>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="btn-group-vertical">
+                    <button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-home"></i></button>
+                    <button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-user"></i></button>
+                    <button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-comment"></i></button>
+                    <button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-cog"></i></button>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="btn-group-vertical">
+                    <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-home"></i></button>
+                    <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-user"></i></button>
+                    <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-comment"></i></button>
+                    <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-cog"></i></button>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="btn-group-vertical">
+                    <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-home"></i></button>
+                    <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-user"></i></button>
+                    <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-comment"></i></button>
+                    <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-cog"></i></button>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="btn-group-vertical">
+                    <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-home"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-user"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-comment"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-cog"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button Dropdowns
+        ================================================== -->
+        <div class="example">
+          <table class="sg-section-table" width="100%">
+              <tbody>
+                  <tr>
+                      <td><h3 class="sg-section-1">Button Dropdowns</h3></td>
+                      <td width="100%"><div class="sg-red-line"></div></td>
+                  </tr>
+              </tbody>
+          </table>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Normal <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+              <div class="blank"></div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Default <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+              <div class="blank"></div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Primary <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+              <div class="blank"></div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Success <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+              <div class="blank"></div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Info <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+              <div class="blank"></div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Warning <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+              <div class="blank"></div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Danger <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="btn-group">
+                <button type="button" class="btn">Normal</button>
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+              <div class="blank"></div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-default">Default</button>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+              <div class="blank"></div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+              <div class="blank"></div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+              <div class="blank"></div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+              <div class="blank"></div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+              <div class="blank"></div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Label
+        s, Badges, Dropdowns, Tooltip and Popover
+        ================================================== -->
+        <div class="example">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="row">
+                <div class="col-md-12">
+                  <!-- Labels
+                  ================================================== -->
+                  <table class="sg-section-table" width="100%">
+                      <tbody>
+                          <tr>
+                              <td><h3 class="sg-section-1">Labels</h3></td>
+                              <td width="100%"><div class="sg-red-line"></div></td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <span class="label">Normal</span>
+                  <div class="blank"></div>
+                  <span class="label label-default">Default</span>
+                  <div class="blank"></div>
+                  <span class="label label-primary">Primary</span>
+                  <div class="blank"></div>
+                  <span class="label label-success">Success</span>
+                  <div class="blank"></div>
+                  <span class="label label-info">Info</span>
+                  <div class="blank"></div>
+                  <span class="label label-warning">Warning</span>
+                  <div class="blank"></div>
+                  <span class="label label-danger">Danger</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-md-offset-6">
+                  <!-- Tooltips
+                  ================================================== -->
+                  <table class="sg-section-table" width="100%">
+                      <tbody>
+                          <tr>
+                              <td><h3 class="sg-section-1">Tooltips</h3></td>
+                              <td width="100%"><div class="sg-red-line"></div></td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <div class="row tooltip-demo">
+                    <div class="col-md-12"><button type="button" class="btn btn-info btn-block" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button></div>
+                    <div class="col-md-12"><button type="button" class="btn btn-info btn-block" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button></div>
+                    <div class="col-md-12"><button type="button" class="btn btn-info btn-block" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button></div>
+                    <div class="col-md-12"><button type="button" class="btn btn-info btn-block" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <!-- Badges
+              ================================================== -->
+              <table class="sg-section-table" width="100%">
+                  <tbody>
+                      <tr>
+                          <td><h3 class="sg-section-1">Badges</h3></td>
+                          <td width="100%"><div class="sg-red-line"></div></td>
+                      </tr>
+                  </tbody>
+              </table>
+              <span class="badge">Normal</span>
+              <div class="blank"></div>
+              <span class="badge badge-default">Default</span>
+              <div class="blank"></div>
+              <span class="badge badge-primary">Primary</span>
+              <div class="blank"></div>
+              <span class="badge badge-success">Success</span>
+              <div class="blank"></div>
+              <span class="badge badge-info">Info</span>
+              <div class="blank"></div>
+              <span class="badge badge-warning">Warning</span>
+              <div class="blank"></div>
+              <span class="badge badge-danger">Danger</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+       
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/iCheck/icheck.min.js"></script>
+        <script src="bower_components/Selecter/jquery.fs.selecter.js"></script>
+        <!-- endbower -->
+        <!-- bootstrap:js -->
+        <script src="bower_components/bootstrap/js/affix.js"></script>
+        <script src="bower_components/bootstrap/js/alert.js"></script>
+        <script src="bower_components/bootstrap/js/dropdown.js"></script>
+        <script src="bower_components/bootstrap/js/tooltip.js"></script>
+        <script src="bower_components/bootstrap/js/modal.js"></script>
+        <script src="bower_components/bootstrap/js/transition.js"></script>
+        <script src="bower_components/bootstrap/js/button.js"></script>
+        <script src="bower_components/bootstrap/js/popover.js"></script>
+        <script src="bower_components/bootstrap/js/carousel.js"></script>
+        <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+        <script src="bower_components/bootstrap/js/collapse.js"></script>
+        <script src="bower_components/bootstrap/js/tab.js"></script>    
+        <!-- endbootstrap-->
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/sgFramework.js"></script>
+
+        <!-- inject:partials -->
+        <!-- angular templates will be automaticaly converted in js and inserted here -->
+        <!-- endinject -->
+        <!-- endbuild -->
+
+      </body>
+      </html>
